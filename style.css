@@ -1,0 +1,214 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+        /* Color variables */
+
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: goldenrod;
+        /* Font size variables */
+
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+        /* Styling for the header section */
+
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    right: 0;
+    /* z index property that defines the order of overlapping html elem */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+        /* css transitions provide a way to control animation speed when changing properties */
+
+    transition: all .45s ease;
+}
+.logo{
+        /* Styling for the logo */
+
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+span{
+    color: var(--main-color)
+
+}
+
+.navlist{
+        /* Styling for the navigation list */
+
+display: flex;
+}
+
+.navlist a{
+        /* Styling for navigation links */
+
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+
+.navlist a:hover{
+    color: var(--main-color)
+}
+
+.navlist a.active{
+    color: var(--main-color)
+}
+
+#menu-icon{
+        /* Styling for the menu icon */
+
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+section{
+        /* Styling for sections */
+
+    padding: 160px 15% 120px;
+}
+.home{
+        /* Styling for the home section */
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(bck-img.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slide{
+    margin-bottom: 20px;
+}
+
+.one{
+        /* Styling for the "Hello" span */
+
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color)
+}
+
+.two{
+        /* Styling for the "I'm" span */
+
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home-text h1{
+        /* Styling for the main heading */
+
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
+
+.home-text h3{
+        /* Styling for the subheading */
+
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.home-text p{
+        /* Styling for the paragraph */
+
+    color: var(--second-bg-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.button{
+        /* Styling for buttons */
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+        /* Styling for the primary button */
+
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .45s ease;
+}
+
+.btn:hover{
+        /* Styling for the primary button on hover */
+
+    transform: scale(0.9);
+}
+
+.btn2{
+        /* Styling for the secondary button */
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 35px;
+}
+
