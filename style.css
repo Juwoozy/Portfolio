@@ -281,6 +281,7 @@ header.sticky{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+    position: relative;
 }
 
 .about-img img{
@@ -288,4 +289,59 @@ header.sticky{
     height: auto;
     width: 100%;
     border-radius: 8px;
+}
+
+.about-text h2{
+font-size: var(--h2-font);
+line-height: 1;
+}
+
+.about-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.btnR{
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .45s ease;
+}
+
+.btnR:hover{
+    transform: scale(0.9);
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(0.1);
+    text-align: center;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, 50%) scale(1);
+}
+
+.popup img{
+    width: 100%;
+    margin-top: -50px;
+    
 }

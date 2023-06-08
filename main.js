@@ -20,11 +20,19 @@ nextButton.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % carouselImages.length;
   carouselImages[currentIndex].style.display = 'block';
 });
-
+//sticky nav
 const header = document.querySelector("header");
 window.addEventListener ("scroll", function(){
   header.classList.toggle ("sticky", window.scrollY > 100);
 });
 
 
+let popup = document.getElementById("popup");
+
+function openPopup(){
+  popup.classList.add("open-popup")
+}
+function closePopup(){
+  popup.classList.remove("open-popup")
+}
 
