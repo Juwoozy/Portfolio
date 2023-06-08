@@ -102,26 +102,14 @@ section{
 
     padding: 160px 15% 120px;
 }
-.home{
-        /* Styling for the home section */
-
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image: url(bck-img.png);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
 
 .slide{
     margin-bottom: 20px;
 }
 
 .one{
-        /* Styling for the "Hello" span */
-
+    /* Styling for the "Hello" span */
+    
     display: inline-block;
     margin-right: 15px;
     height: 32px;
@@ -135,8 +123,8 @@ section{
 }
 
 .two{
-        /* Styling for the "I'm" span */
-
+    /* Styling for the "I'm" span */
+    
     display: inline-block;
     color: var(--second-color);
     font-size: 20px;
@@ -144,8 +132,8 @@ section{
 }
 
 .home-text h1{
-        /* Styling for the main heading */
-
+    /* Styling for the main heading */
+    
     font-size: var(--big-font);
     font-weight: 700;
     color: var(--text-color);
@@ -154,8 +142,8 @@ section{
 }
 
 .home-text h3{
-        /* Styling for the subheading */
-
+    /* Styling for the subheading */
+    
     color: var(--text-color);
     margin: 0 0 35px;
     font-size: 3rem;
@@ -164,8 +152,8 @@ section{
 }
 
 .home-text p{
-        /* Styling for the paragraph */
-
+    /* Styling for the paragraph */
+    
     color: var(--second-bg-color);
     font-size: var(--p-font);
     line-height: 1.8;
@@ -173,16 +161,16 @@ section{
 }
 
 .button{
-        /* Styling for buttons */
-
+    /* Styling for buttons */
+    
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
 .btn{
-        /* Styling for the primary button */
-
+    /* Styling for the primary button */
+    
     display: inline-block;
     padding: 12px 28px;
     background: var(--main-color);
@@ -195,14 +183,14 @@ section{
 }
 
 .btn:hover{
-        /* Styling for the primary button on hover */
-
+    /* Styling for the primary button on hover */
+    
     transform: scale(0.9);
 }
 
 .btn2{
-        /* Styling for the secondary button */
-
+    /* Styling for the secondary button */
+    
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -212,3 +200,92 @@ section{
     margin-left: 35px;
 }
 
+.btn2 span i{
+    height: 55px;
+    width: 55px; 
+    background: var(--main-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.btn2 span i:hover{
+    transform: scale(1.1) translateY(5px);
+}
+
+.carousel-container {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+.home{
+        /* Styling for the home section */
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(bck-img.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header.sticky{
+    background: var(--bg-color);
+    border-bottom: 1px solid #ffffff1a;
+    padding: 12px 15%;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img{
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
