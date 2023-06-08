@@ -345,3 +345,27 @@ line-height: 1;
    max-width: 535px;
    
 }
+
+.footer-container {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-link {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: #000;
+  }
+  .social-link i {
+    font-family: "Font Awesome 5 Free";
+  }
