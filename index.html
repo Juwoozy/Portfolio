@@ -19,7 +19,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
             <!-- social media icons from awesome fonts -->
 
-            <link rel="stylesheet" href="/Users/jayce/code/Web-Portfolio/Portfolio/fontawesome/webfonts/css/all.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+           
+            <!-- mobile responsive viewport -->
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title></title>
 </head>
@@ -27,16 +31,13 @@
     <!--header design-->
     <header>
         <a href="#" class="logo">D<span>ev</span>el<span>o</span>p<span>er.</span></a>
-        
-        <!--Navigation Links--> <!-- <a> = anchor tags-->
-            
-            <ul class="navlist">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
+            <nav>
+                <ul class="navlist">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>     
+                 </ul>
+            </nav>
             
             <div class="bx bx-menu" id="menu-icon">
                 
@@ -60,15 +61,7 @@
                 </div>
             </div>
             
-            <div class="carousel-container">
-                <div class="carousel-slide">
-                    <img class="carousel-image" src="image1.jpg" alt="Image 1">
-                    <img class="carousel-image" src="image2.jpg" alt="Image 2">
-                    <img class="carousel-image" src="image3.jpg" alt="Image 3">
-                </div>
-                <div class="carousel-button carousel-prev">&#10094;</div>
-                <div class="carousel-button carousel-next">&#10095;</div>
-            </div>
+            
             
             
         </section>
@@ -97,10 +90,18 @@
         <p>Portfolio</p>
         <h2><span>Latest</span> Projects</h2>
     </div>
-
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img class="carousel-image" src="image1.jpg" alt="Image 1">
+            <img class="carousel-image" src="image2.jpg" alt="Image 2">
+            <img class="carousel-image" src="image3.jpg" alt="Image 3">
+        </div>
+        <div class="carousel-button carousel-prev">&#10094;</div>
+        <div class="carousel-button carousel-next">&#10095;</div>
+    </div>
     <div class="portfolio-content">
         <div class="row">
-            <img src="portfolio1.jpg">
+            <img src="">
         </div>
     </div>
     
@@ -114,14 +115,9 @@
         <footer>
             <div class="footer-container">
               <div class="social-links">
-                <a href="https://www.facebook.com" target="_blank" class="social-link">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank" class="social-link">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="social-link">
-                  <i class="fab fa-instagram"></i>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.github.com"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
                 </a>
               </div>
             </div>

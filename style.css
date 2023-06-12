@@ -24,6 +24,9 @@
     --p-font: 1.1rem;
 }
 
+
+
+
 body{
     background: var(--bg-color);
     color: var(--text-color);
@@ -219,12 +222,15 @@ section{
 }
 
 .carousel-container {
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 500px;
     position: relative;
     overflow: hidden;
-    margin-left: auto;
+    margin-left: 20em;
     margin-right: auto;
+    margin-bottom: 30%;
+    border: 10px solid black
+    
 }
 
 .carousel-slide {
@@ -347,7 +353,7 @@ line-height: 1;
 }
 
 .footer-container {
-    background-color: white;
+    background-color: lightslategray;
     padding: 20px;
   }
   
@@ -368,4 +374,87 @@ line-height: 1;
   }
   .social-link i {
     font-family: "Font Awesome 5 Free";
+  }
+
+  .social-links{
+    font-size: 50px;
+  }
+
+  @media screen and (max-width: 480px){ 
+    header{
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+    header.sticky{
+        padding:10px;
+    }
+    section{
+        padding: 110px 3% 60px;
+    }
+    .end{
+        padding: 15px 3%;
+    }
+  }
+
+  @media (max-width: 1100px){
+    :root{
+        --big-font: 4rem;
+        --h2-font: 2.5rem;
+        --p-font: 1rem;
+        transition: .1s
+    }
+    .home-text h3{
+        font-size: 2.5rem;
+    }
+    .home{
+        height: 87vh;
+    }
+  }
+
+  @media (max-width: 920px){
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+        order: 2;
+    }
+    .about-img img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+  }
+
+  @media (max-width: 840px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .45s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(--text-color);
+    }
+    .navlist a:hover{
+        color: var(--text-color);
+    }
+    .navlist a:active{
+        color: var(--text-color);
+    }
+    .navlist.open{
+        top: 100%;
+    }
   }
